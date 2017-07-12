@@ -1,0 +1,121 @@
+/*城市选择弹框start*/
+.location-select {
+  position: absolute;
+  width: 750rpx;
+  height: 100%;
+  background-color: rgba(00, 00, 00, 0.3);
+  z-index: 2;
+  font-size: 14px;
+  font-family: "lucida grande",
+                 "lucida sans unicode",
+                 lucida,
+                 helvetica,
+                 "Hiragino Sans GB",
+                 "Microsoft YaHei",
+                 "WenQuanYi Micro Hei",
+                 sans-serif;
+}
+
+.location-picker {
+  float: left;
+  margin-top: 50px;
+  margin-left: 25rpx;
+  width: 700rpx;
+  height: 300px;
+  border-radius: 5rpx;
+  background-color: white;
+}
+
+.location-picker-top {
+  float: left;
+  width: 700rpx;
+  height: 49px;
+  border-bottom: solid;
+  border-bottom-color: #eee;
+  border-bottom-width: 1px;
+}
+
+.location-picker-bottom {
+  float: left;
+  width: 700rpx;
+  height: 49px;
+  border-top: solid;
+  border-top-width: 1px;
+  border-top-color: #eee;
+}
+
+.picker-bottom-left {
+  float: left;
+  margin-left: 300rpx;
+  line-height: 50px;
+  height: 50px;
+  width: 200rpx;
+  font-size: 16px;
+  color: #707070;
+  text-align: center;
+}
+
+.picker-bottom-right {
+  float: left;
+  line-height: 50px;
+  height: 50px;
+  width: 200rpx;
+  font-size: 16px;
+  color: #06ccb6;
+  text-align: center;
+}
+
+.picker-top-title {
+  font-size: 20px;
+  color: #000;
+  line-height: 50px;
+}
+
+.location-picker-view {
+  float: left;
+  width: 700rpx;
+  height: 200px;
+  line-height: 50px;
+  background-color: #eee;
+}
+
+.location-picker-column {
+  background-color: orange;
+}
+
+.picker-province-item {
+  line-height: 50px;
+  height: 50px;
+  width: 200rpx;
+  margin-left: 10rpx;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.picker-city-item {
+  line-height: 50px;
+  height: 50px;
+  width: 200rpx;
+  margin-left: 10rpx;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.picker-college-item {
+  line-height: 50px;
+  height: 50px;
+  width: 280rpx;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+/*城市选择弹框end*/

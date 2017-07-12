@@ -1,0 +1,33 @@
+<!--城市选择弹框start-->
+<view class="location-select" wx:if="{{pickerInfo.state == true}}">
+  <view class="location-picker">
+    <view class="location-picker-top flex-center-center">
+      {{pickerInfo.title}}
+    </view>
+    <picker-view class="location-picker-view" value="{{pickerInfo.value}}" indicator-style="height: 50px;" bindchange="updatePicker">
+      <picker-view-column>
+        <view wx:for="{{pickerInfo.provinces}}" class="picker-province-item">
+          {{item.provinceName}}
+        </view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{pickerInfo.citys}}" class="picker-city-item">
+          {{item.cityName}}
+        </view>
+      </picker-view-column>
+    </picker-view>
+    <!--取消和确定-->
+    <view class="location-picker-bottom">
+      <view class="picker-bottom-left" bindtap="updateLocationInfo" data-title="cancel">
+        {{pickerInfo.submits[0]}}
+      </view>
+      <view class="picker-bottom-right" bindtap="updateLocationInfo" data-title="select">
+        {{pickerInfo.submits[1]}}
+      </view>
+    </view>
+  </view>
+</view>
+<!--城市选择弹框end-->
+
+
+<button bindtap="updateLocationInfo" data-title="state">点击弹出城市选择弹框:{{defaults.cityName}}</button>
